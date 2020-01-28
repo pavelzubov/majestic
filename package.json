@@ -12,9 +12,9 @@
     "server": "ts-node  --project ./tsconfig.server.json ./server/index.ts",
     "build-server": "cross-env BABEL_ENV='production' webpack --env.production --config ./scripts/webpack.server.config.js",
     "build-ui": "cross-env BABEL_ENV='production' rimraf dist && webpack --env.production --config ./scripts/webpack.ui.config.js",
-    "prod": "npm run build-ui && npm run build-server",
+    "prod": "yarn run build-ui && yarn run build-server",
     "watch-server": "nodemon",
-    "ship": "npm run prod && np --yolo",
+    "ship": "yarn run prod && np --yolo",
     "integration": "cd ./integration && yarn run-in-ci"
   },
   "dependencies": {

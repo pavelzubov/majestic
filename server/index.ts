@@ -46,7 +46,7 @@ async function main() {
         playground: "/debug"
       },
       async () => {
-        const url = `http://localhost:${port}`;
+        const url = `https://localhost:${port}`;
         console.log(`⚡  Majestic v${pkg.version} is running at ${url} `);
 
         if (args.app) {

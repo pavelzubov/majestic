@@ -6,10 +6,10 @@ import { split } from "apollo-link";
 declare var PRODUCTION: boolean;
 
 let WS_URL = "wss://localhost:4000";
-let HTTP_URL = "https://localhost:4000";
+let HTTP_URL = "http://localhost:4000";
 if (PRODUCTION) {
   WS_URL = `wss://${window.location.host}`;
-  HTTP_URL = `https://${window.location.host}`;
+  HTTP_URL = `http://${window.location.host}`;
 }
 
 export function getAPIUrl() {

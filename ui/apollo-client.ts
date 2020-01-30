@@ -5,10 +5,10 @@ import { split } from "apollo-link";
 
 declare var PRODUCTION: boolean;
 
-let WS_URL = "ws://localhost:4000";
+let WS_URL = "wss://localhost:4000";
 let HTTP_URL = "http://localhost:4000";
 if (PRODUCTION) {
-  WS_URL = `ws://${window.location.host}`;
+  WS_URL = `wss://${window.location.host}`;
   HTTP_URL = `http://${window.location.host}`;
 }
 
